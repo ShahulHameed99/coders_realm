@@ -1,0 +1,34 @@
+body {
+    background-color: rgb(116, 116, 11);
+    padding-top: 200px;
+    padding-left: 100px;
+}
+
+.spinner {
+    width: 40px;
+    height: 40px;
+}
+
+.spinner:after {
+    content: " ";
+    display: block;
+
+    border-radius: 50%;
+    border: 32px solid #fff;
+    border-color: #fff transparent;
+    animation: rotate 1.2s infinite;
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotate(0);
+    }
+
+    50% {
+        transform: rotate(900deg);
+    }
+
+    100% {
+        transform: rotate(1800deg);
+    }
+}
