@@ -1,0 +1,100 @@
+.component {
+    position: absolute;
+    border-radius: 300px;
+    height: 120px;
+    width: 248px;
+
+    cursor: pointer;
+}
+
+.component .overlap-group {
+    height: 95px;
+    position: relative;
+    top: 12px;
+    width: 202px;
+}
+
+.component .ellipse .image {
+    width: 70px;
+    padding: 12px;
+}
+
+.component .div {
+    align-items: flex-start;
+    display: flex;
+    gap: 60px;
+    height: 48px;
+    position: absolute;
+    top: 24px;
+    width: 189px;
+}
+
+.component .text-wrapper {
+    color: #ffffff;
+    font-family: 'Secular One';
+    font-size: 20px;
+    font-weight: 700;
+    letter-spacing: 0;
+    line-height: normal;
+    margin-top: -1px;
+    position: relative;
+    white-space: nowrap;
+    width: fit-content;
+}
+
+.component .ellipse {
+    background-color: #d9d9d9;
+    border-radius: 48.5px/47.5px;
+    height: 95px;
+    position: absolute;
+    top: 0;
+    width: 97px;
+}
+
+.component.component-1,
+.component.component-1 .overlap-group,
+.component.component-1 .div,
+.component.component-1 .ellipse,
+.component.component-1 .ellipse .image,
+
+.component.component-2,
+.component.component-2 .overlap-group,
+.component.component-2 .div,
+.component.component-2 .ellipse {
+    transition-property: all;
+    transition-duration: 0.3s;
+    transition-timing-function: ease-in-out;
+    transition-delay: 0.3s;
+}
+
+.component.component-2 {
+    background-color: black;
+}
+
+.component.component-1 {
+    background-color: #a84600;
+}
+
+.component.component-2 .overlap-group {
+    left: 29px;
+}
+
+.component.component-1 .overlap-group {
+    left: 16px;
+}
+
+.component.component-2 .div {
+    left: 0;
+}
+
+.component.component-1 .div {
+    left: 13px;
+}
+
+.component.component-2 .ellipse {
+    left: 105px;
+}
+
+.component.component-1 .ellipse {
+    left: 0;
+}
